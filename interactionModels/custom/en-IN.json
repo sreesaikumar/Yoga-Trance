@@ -1,0 +1,525 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "yoga trance",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "YogaIntroIntent",
+          "slots": [],
+          "samples": [
+            "What is yoga",
+            "tell me about yoga"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "YogaPathsIntent",
+          "slots": [
+            {
+              "name": "path_name",
+              "type": "List_Of_YogaPaths"
+            }
+          ],
+          "samples": [
+            "What is {path_name}"
+          ]
+        },
+        {
+          "name": "MoreAboutPathsIntent",
+          "slots": [
+            {
+              "name": "path_name",
+              "type": "List_Of_YogaPaths"
+            }
+          ],
+          "samples": [
+            "more {path_name}",
+            "more info {path_name}",
+            "More about {path_name}",
+            "Tell me more about {path_name}"
+          ]
+        },
+        {
+          "name": "YogaPathSubCategoriesIntent",
+          "slots": [
+            {
+              "name": "path_sub_name",
+              "type": "List_Of_PathSubCategories"
+            },
+            {
+              "name": "path_name",
+              "type": "List_Of_YogaPaths"
+            }
+          ],
+          "samples": [
+            "what is {path_sub_name} in {path_name}",
+            "{path_sub_name} means",
+            "tell about {path_sub_name}",
+            "tell me about {path_sub_name}",
+            "Do you know about {path_sub_name}",
+            "what is {path_sub_name}",
+            "What is meant by {path_sub_name}"
+          ]
+        },
+        {
+          "name": "YogaPathPrinciplesIntent",
+          "slots": [
+            {
+              "name": "principle_name",
+              "type": "List_Of_Principles"
+            },
+            {
+              "name": "path_name",
+              "type": "List_Of_YogaPaths"
+            },
+            {
+              "name": "path_sub_name",
+              "type": "List_Of_PathSubCategories"
+            }
+          ],
+          "samples": [
+            "{path_sub_name} {principle_name}",
+            "{path_name} {principle_name}",
+            "{principle_name} {path_sub_name}",
+            "{principle_name} {path_name}",
+            "what is meant by {principle_name} of {path_sub_name}",
+            "what is meant by {principle_name} of {path_name}",
+            "what is meant by {principle_name} in {path_sub_name}",
+            "what is meant by {principle_name} in {path_name}",
+            "what is meant by  {principle_name} principle",
+            "what is meant by {principle_name} sutra",
+            "what is meant by {principle_name}",
+            "{principle_name} means",
+            "What\u0027s {principle_name}",
+            "What is {principle_name}",
+            "What is {principle_name} principle",
+            "What is {principle_name} sutra"
+          ]
+        },
+        {
+          "name": "PracticeYogaAsanasIntent",
+          "slots": [
+            {
+              "name": "level_type",
+              "type": "List_Of_LevelTypes",
+              "samples": [
+                "{level_type}",
+                "{level_type} level",
+                "I will go with {level_type} level of asanas",
+                "Let\u0027s go with {level_type} level",
+                "I would like to go with {level_type} level of asanas"
+              ]
+            }
+          ],
+          "samples": [
+            "to start my yoga practice",
+            "to begin my yoga practice",
+            "begin my yoga practice",
+            "{level_type}",
+            "start practicing {level_type} level asanas",
+            "start {level_type} level asanas",
+            "start {level_type} asanas",
+            "start practicing {level_type} asanas",
+            "I want to practice {level_type} asanas",
+            "I want to practice {level_type} level asanas",
+            "I want to practice asanas",
+            "Start my yoga practice",
+            "Let\u0027s begin my yoga asanas practice"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Gyana Yoga",
+                "synonyms": [
+                  "jnana yoga",
+                  "jnana"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Raja Yoga",
+                "synonyms": [
+                  "AstangaYoga",
+                  "Astanga Yoga"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Bhakti Yoga"
+              }
+            },
+            {
+              "name": {
+                "value": "Karma Yoga"
+              }
+            }
+          ],
+          "name": "List_Of_YogaPaths"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "mumukshtva"
+              }
+            },
+            {
+              "name": {
+                "value": "shatsampathi"
+              }
+            },
+            {
+              "name": {
+                "value": "vairagya"
+              }
+            },
+            {
+              "name": {
+                "value": "viveka"
+              }
+            },
+            {
+              "name": {
+                "value": "samadhi"
+              }
+            },
+            {
+              "name": {
+                "value": "dhyana"
+              }
+            },
+            {
+              "name": {
+                "value": "dharana"
+              }
+            },
+            {
+              "name": {
+                "value": "pratyahara"
+              }
+            },
+            {
+              "name": {
+                "value": "pranayam"
+              }
+            },
+            {
+              "name": {
+                "value": "asana"
+              }
+            },
+            {
+              "name": {
+                "value": "niyama"
+              }
+            },
+            {
+              "name": {
+                "value": "yama"
+              }
+            },
+            {
+              "name": {
+                "value": "para bhakti"
+              }
+            },
+            {
+              "name": {
+                "value": "apana bhakti"
+              }
+            },
+            {
+              "name": {
+                "value": "nishkama karma"
+              }
+            },
+            {
+              "name": {
+                "value": "sakama karma"
+              }
+            }
+          ],
+          "name": "List_Of_PathSubCategories"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "satsang"
+              }
+            }
+          ],
+          "name": "List_Of_Principles"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Advanced",
+                "synonyms": [
+                  "complicated",
+                  "critical",
+                  "pundit",
+                  "vinyasa",
+                  "master",
+                  "professional",
+                  "expert",
+                  "pro"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Intermediate",
+                "synonyms": [
+                  "moderate",
+                  "fair",
+                  "normal",
+                  "mid",
+                  "average",
+                  "medium"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Beginner",
+                "synonyms": [
+                  "uncomplicated",
+                  "straightforward",
+                  "simple",
+                  "primary",
+                  "fundamental",
+                  "novice",
+                  "starter",
+                  "basic",
+                  "beginning",
+                  "easy"
+                ]
+              }
+            }
+          ],
+          "name": "List_Of_LevelTypes"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "PracticeYogaAsanasIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1552405615983"
+          },
+          "slots": [
+            {
+              "name": "level_type",
+              "type": "List_Of_LevelTypes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1552405615983.1271881192575"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1552405615983.1271881192575.1570276124934"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.940564244946.193201503995",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What level of asanas would you like to practice, beginner or intermediate or advanced "
+          },
+          {
+            "type": "PlainText",
+            "value": "Would you like to go with beginner level asanas or intermediate level of asanas or advanced level of asanas"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.940564244946.193201503995",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "hi"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.940564244946",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I think today you are interested in practicing {level_type} level yogaasanas. Am I right?"
+          },
+          {
+            "type": "PlainText",
+            "value": "You choose to practice {level_type} level of asanas. Shall we start?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1552405615983",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I think today you are interested in practicing {level_type} level og yoga asanas. Am I right?"
+          },
+          {
+            "type": "PlainText",
+            "value": "You choose to practice {level_type} level of asanas. Shall we start?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1552405615983.846559730795",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "That\u0027s {month} {day} {year} , did I get that right?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1552405615983.846559730795.1219201097969",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please say a valid day"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1552405615983.582242035116.42443557156",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please try again and say a valid month"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1552405615983.582242035116",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "ok, the day is {month} but in which month?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1552405615983.466705266579",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "you\u0027re from {month} of which year?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1552405615983.466705266579.106035767129",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "That\u0027s too old to be true. Please try again"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1552405615983.466705266579.517603154675",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "That\u0027s too young to be true. Plese try again"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1552405615983.1271881192575",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What level of asanas would you like to practice, beginner or intermediate or advanced"
+          },
+          {
+            "type": "PlainText",
+            "value": "Which level of asanas would you like to go with, beginner level or intermediate or advanced"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1552405615983.1271881192575.1570276124934",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry, I din\u0027t get what exactly you want to practice. You can choose from various levels like Beginner or Intermediate or Advanced levels of asanas"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "34"
+}
