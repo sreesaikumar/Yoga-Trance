@@ -46,7 +46,7 @@ Gyana Yoga is the philosophical path. The focus of this path is to gain the abil
 
 <h1>List Of Yoga Asanas</h1>
 
-Here's the list of yoga asanas featuring basic, moderate and pro levels for wide range of people by*YogaTrance*.
+Here's the list of yoga asanas featuring basic, moderate and pro levels for wide range of people by *YogaTrance*.
 
 |          Sanskrit Name              |             Modern Name                      |     Difficulty Level     |
 |             :----:                  |               :----:                         |          :----:          |
@@ -154,9 +154,11 @@ Here's the list of yoga asanas featuring basic, moderate and pro levels for wide
 
 <h1>Get Started</h1>
 
-Enable *"Yoga Trance"* skill from Alexa skills store. Try saying,
+Enable *"Yoga Trance"* skill from Alexa skills store.
 
-<span style="font-family:Nunito; font-size:1em;">**Alexa, "open Yoga Trance."**</span>
+**Try Saying,**
+
+*Alexa, "open Yoga Trance."*
 
 - *"What is yoga?"*
 - *"Start my yoga practice"*
